@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-&dzi#zsb(hz6p(s#anunt&#-a%ohr2hld71*i72*^exvw-yq$y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['13.60.65.249', 'localhost', 'notesapp.onrender.com']
 
 
 # Application definition
@@ -88,7 +88,6 @@ WSGI_APPLICATION = 'notesapp.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.getenv("DB_NAME"),
@@ -98,6 +97,7 @@ DATABASES = {
         'PORT': os.getenv("DB_PORT"),
     }
 }
+
 
 
 # Password validation
